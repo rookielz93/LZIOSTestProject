@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		34A3DE452B2BFEAF00E535CB /* LZITPTestPage.m in Sources */ = {isa = PBXBuildFile; fileRef = 34A3DE442B2BFEAF00E535CB /* LZITPTestPage.m */; };
+		34AD62252B3AB33F00F4054F /* LZTestFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 34AD621A2B3AAF3000F4054F /* LZTestFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		58EB20B904CEE76FA24637ED /* Pods_LZIOSTestProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73002E5A067BB0B676FC8C3A /* Pods_LZIOSTestProject.framework */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
@@ -21,9 +22,49 @@
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		34AD62192B3AAF3000F4054F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 34AD62152B3AAF2F00F4054F /* LZTestFramework.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 34AD620B2B3AAF2F00F4054F;
+			remoteInfo = LZTestFramework;
+		};
+		34AD621F2B3AB28E00F4054F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 34AD62152B3AAF2F00F4054F /* LZTestFramework.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 34AD620A2B3AAF2F00F4054F;
+			remoteInfo = LZTestFramework;
+		};
+		34AD623F2B3ABE5400F4054F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 34AD623B2B3ABE5300F4054F /* LZTestFramework2.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 34AD62312B3ABE5300F4054F;
+			remoteInfo = LZTestFramework2;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		34AD62262B3AB33F00F4054F /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				34AD62252B3AB33F00F4054F /* LZTestFramework.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		34A3DE432B2BFEAF00E535CB /* LZITPTestPage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LZITPTestPage.h; sourceTree = "<group>"; };
 		34A3DE442B2BFEAF00E535CB /* LZITPTestPage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LZITPTestPage.m; sourceTree = "<group>"; };
+		34AD62152B3AAF2F00F4054F /* LZTestFramework.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = LZTestFramework.xcodeproj; path = LZTestFramework/LZTestFramework.xcodeproj; sourceTree = "<group>"; };
+		34AD623B2B3ABE5300F4054F /* LZTestFramework2.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = LZTestFramework2.xcodeproj; path = LZTestFramework2/LZTestFramework2.xcodeproj; sourceTree = "<group>"; };
 		357FD34490C51773859ACDB6 /* Pods-LZIOSTestProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LZIOSTestProject.release.xcconfig"; path = "Target Support Files/Pods-LZIOSTestProject/Pods-LZIOSTestProject.release.xcconfig"; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* LZIOSTestProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LZIOSTestProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -95,6 +136,31 @@
 			path = Test;
 			sourceTree = "<group>";
 		};
+		34AD62002B3AAEC800F4054F /* Third */ = {
+			isa = PBXGroup;
+			children = (
+				34AD623B2B3ABE5300F4054F /* LZTestFramework2.xcodeproj */,
+				34AD62152B3AAF2F00F4054F /* LZTestFramework.xcodeproj */,
+			);
+			path = Third;
+			sourceTree = "<group>";
+		};
+		34AD62162B3AAF2F00F4054F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				34AD621A2B3AAF3000F4054F /* LZTestFramework.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		34AD623C2B3ABE5300F4054F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				34AD62402B3ABE5400F4054F /* LZTestFramework2.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		6003F581195388D10070C39A = {
 			isa = PBXGroup;
 			children = (
@@ -128,6 +194,7 @@
 		6003F593195388D20070C39A /* LZIOSTestProject */ = {
 			isa = PBXGroup;
 			children = (
+				34AD62002B3AAEC800F4054F /* Third */,
 				6003F59C195388D20070C39A /* LZITPAppDelegate.h */,
 				6003F59D195388D20070C39A /* LZITPAppDelegate.m */,
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
@@ -171,10 +238,12 @@
 				6003F587195388D20070C39A /* Frameworks */,
 				6003F588195388D20070C39A /* Resources */,
 				AD0DE90F1FBC27649746BC3D /* [CP] Embed Pods Frameworks */,
+				34AD62262B3AB33F00F4054F /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				34AD62202B3AB28E00F4054F /* PBXTargetDependency */,
 			);
 			name = LZIOSTestProject;
 			productName = LZIOSTestProject;
@@ -190,8 +259,13 @@
 				CLASSPREFIX = LZITP;
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = jinshengli;
+				TargetAttributes = {
+					6003F589195388D20070C39A = {
+						DevelopmentTeam = DQ72B9BAX2;
+					};
+				};
 			};
-			buildConfigurationList = 6003F585195388D10070C39A /* Build configuration list for PBXProject "PROJECT" */;
+			buildConfigurationList = 6003F585195388D10070C39A /* Build configuration list for PBXProject "LZIOSTestProject" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -203,12 +277,39 @@
 			mainGroup = 6003F581195388D10070C39A;
 			productRefGroup = 6003F58B195388D20070C39A /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 34AD62162B3AAF2F00F4054F /* Products */;
+					ProjectRef = 34AD62152B3AAF2F00F4054F /* LZTestFramework.xcodeproj */;
+				},
+				{
+					ProductGroup = 34AD623C2B3ABE5300F4054F /* Products */;
+					ProjectRef = 34AD623B2B3ABE5300F4054F /* LZTestFramework2.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				6003F589195388D20070C39A /* LZIOSTestProject */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		34AD621A2B3AAF3000F4054F /* LZTestFramework.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = LZTestFramework.framework;
+			remoteRef = 34AD62192B3AAF3000F4054F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		34AD62402B3ABE5400F4054F /* LZTestFramework2.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = LZTestFramework2.framework;
+			remoteRef = 34AD623F2B3ABE5400F4054F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		6003F588195388D20070C39A /* Resources */ = {
@@ -286,6 +387,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		34AD62202B3AB28E00F4054F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = LZTestFramework;
+			targetProxy = 34AD621F2B3AB28E00F4054F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		6003F596195388D20070C39A /* InfoPlist.strings */ = {
@@ -385,6 +494,7 @@
 			baseConfigurationReference = F4B4D18775827346C27CFCE6 /* Pods-LZIOSTestProject.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = DQ72B9BAX2;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LZIOSTestProject/LZIOSTestProject-Prefix.pch";
 				INFOPLIST_FILE = "LZIOSTestProject/LZIOSTestProject-Info.plist";
@@ -402,6 +512,7 @@
 			baseConfigurationReference = 357FD34490C51773859ACDB6 /* Pods-LZIOSTestProject.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = DQ72B9BAX2;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LZIOSTestProject/LZIOSTestProject-Prefix.pch";
 				INFOPLIST_FILE = "LZIOSTestProject/LZIOSTestProject-Info.plist";
@@ -417,7 +528,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		6003F585195388D10070C39A /* Build configuration list for PBXProject "PROJECT" */ = {
+		6003F585195388D10070C39A /* Build configuration list for PBXProject "LZIOSTestProject" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6003F5BD195388D20070C39A /* Debug */,

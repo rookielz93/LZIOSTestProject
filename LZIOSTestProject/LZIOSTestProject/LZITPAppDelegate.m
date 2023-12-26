@@ -7,12 +7,15 @@
 //
 
 #import "LZITPAppDelegate.h"
+#import "LZLog.h"
+#import "LZFileTool.h"
 
 @implementation LZITPAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    LZLoggerInfo(@"%@", [LZFileTool sandBoxPath:LZSandBoxTypeDocument]);
     return YES;
 }
 
